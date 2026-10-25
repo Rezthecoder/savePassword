@@ -1,4 +1,9 @@
 package com.example.savepassword.repository;
 
-public interface saveUserRepository {
+import com.example.savepassword.entity.SaveUser;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface SaveUserRepository extends JpaRepository<SaveUser,Long> {
 }
